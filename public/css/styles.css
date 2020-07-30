@@ -1,5 +1,46 @@
 body {
+  display: block;
   background-color: #2c2c2c;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-left: 40px;
+}
+
+.navbar-nav {
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  margin-top: 10px;
+}
+
+.container-teddies {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.container-teddies p {
+  text-align: justify;
+}
+
+.bg-dark {
+  background-color: #FFFFFF !important;
+}
+
+.container-teddies .row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */
