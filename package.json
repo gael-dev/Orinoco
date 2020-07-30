@@ -1,0 +1,16 @@
+{
+  "name": "p5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node.js": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./public/scss/main.scss:./public/css/styles.css --style expanded",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC"
+}
