@@ -1,6 +1,5 @@
 body {
     display: block;
-    background-color: rgb(44, 44, 44);
 }
 .container {
     display: flex;
@@ -8,11 +7,6 @@ body {
     align-items: center;
 }
 
-.navbar-brand {
-    img {
-        margin-left: 40px;
-    }
-}
 
 .navbar-nav {
     margin: auto;
@@ -35,12 +29,14 @@ body {
     }
     
 }
-.bg-dark {
-    background-color: #FFFFFF !important;
-}
 .container-teddies {
 .row {
     margin-right: 0px;    
     margin-left: 0px;
 }
+}
+
+h1 {
+    background-color: rgb(116, 80, 39);
+    border-radius: 25px;
 }
