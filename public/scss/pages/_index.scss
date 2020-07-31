@@ -7,6 +7,10 @@ body {
     align-items: center;
 }
 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 
 .navbar-nav {
     margin: auto;
@@ -26,6 +30,9 @@ body {
 
     p {
         text-align: justify;
+        border: solid 1px; 
+        border-radius: 0.25rem;
+        padding: 5px;
     }
     
 }
@@ -39,4 +46,23 @@ body {
 h1 {
     background-color: rgb(116, 80, 39);
     border-radius: 25px;
+    box-shadow: 5px 20px 8px 1px rgba(0, 0, 0, 0.5); 
 }
+.py-3 {
+    background-color: #212529;
+}
+.mt-2, .mb-0 {
+    color: aliceblue;
+}
+
+body {
+.pt-5 {
+    background-image: url(https://serving.photos.photobox.com/198556306478658a6a9b151438cc640f9648709b54027ef32df05519302a71d5f5485cfb.jpg);
+    background-position: bottom;
+    margin-top: 80px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    box-shadow: -1px 2px 170px 1px rgba(0, 0, 0, 0.7);
+}
+}
+
