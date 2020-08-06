@@ -140,7 +140,7 @@ p {
   background: linear-gradient(360deg, rgba(70, 70, 70, 0.37), transparent);
   bottom: 0;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 .py-31 .container {
   justify-content: center !important;
@@ -176,7 +176,7 @@ body .pt-5:after {
 .py-31 {
   bottom: 0;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 .py-31 .container {
   justify-content: center !important;
@@ -189,6 +189,19 @@ body .pt-5 {
 .py-3 {
   background-color: #212529;
   background: linear-gradient(360deg, rgba(70, 70, 70, 0.37), transparent);
+}
+
+.pan {
+  margin: 300px;
+}
+
+h5 {
+  text-align: center;
+  margin-bottom: 50px;
+  border: solid 1px;
+  border-radius: 25px;
+  background-color: blanchedalmond;
+  color: brown;
 }
 
 .thanks {
