@@ -4,7 +4,7 @@ const url = new URL(pageLocation); //récupère l'URL en vue de pouvoir travaill
 const idUrl = url.searchParams.get("id"); //récupère l'ID placée en paramètre de l'URL
 const uri = 'http://localhost:3000/api/teddies/' + idUrl; //pour correspondre à la documentation et récupérer un teddy situé à ../teddies/_id
 const product = document.querySelector('#list1');
-const section = document.getElementsByTagName('main');
+const section = document.getElementsByTagName('p-4');
 
 request.onreadystatechange = function () { //requête pour aller chercher tous les teddies de l'api
     if (this.readyState == XMLHttpRequest.DONE && this.status == 200) { //doit avoir été validée avec une réponse 200 pour être acceptée
@@ -14,7 +14,7 @@ request.onreadystatechange = function () { //requête pour aller chercher tous l
 };
 
 request.open('GET', uri);
-request.send(Blob);
+request.send(document);
 
 
 function renderHTML(data) { //fonction servant à la création dynamique du contenu
