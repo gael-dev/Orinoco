@@ -126,6 +126,11 @@ p {
   justify-content: center;
 }
 
+.bye {
+  border: solid 4px;
+  margin-bottom: 50px;
+}
+
 .row {
   margin-left: 0;
   margin-right: 0;
