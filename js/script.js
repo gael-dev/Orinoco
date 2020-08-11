@@ -4,17 +4,21 @@ const request = new XMLHttpRequest();
 const products = document.querySelector('#products');
 const url = 'http://localhost:3000/api/teddies';
 const parameters = new URLSearchParams(window.location.search);
-const section = document.getElementsByTagName('list');
+const section = document.getElementsByTagName('list1');
+
+request.open("GET", "http://localhost:3000/api/teddies");
+request.send();
 
 request.onreadystatechange = function () { //requête pour aller chercher tous les teddies de l'api
     if (this.readyState == XMLHttpRequest.DONE && this.status == 200) { //doit avoir été validée avec une réponse 200 pour être acceptée
-        response = JSON.parse(this.responseText); //parse de la réponse en JSON
+       const response = JSON.parse(this.responseText); //parse de la réponse en JSON
+       console.log(response);
         renderHTML(response); //argument 'response' qui sera réutilisé dans la fonction de création dynamique du contenu
     }
 };
 
-request.open('GET', url);
-request.send();
+
+
 
 /* ------------------------- Products rendering ------------------------- */
 
@@ -30,7 +34,3 @@ function renderHTML(data) { //fonction de création du contenu HTML
 
     products.appendChild(div); //pour lier le contenu créé à l'ancre 'products' dans le DOM
 };
-
-
-
-
