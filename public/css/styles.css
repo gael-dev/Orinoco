@@ -131,6 +131,20 @@ p {
   margin-bottom: 50px;
 }
 
+section {
+  text-align: -webkit-center;
+}
+
+.slide {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.slide img {
+  border: solid 2px #924905;
+  border-radius: 25%;
+}
+
 .row {
   margin-left: 0;
   margin-right: 0;
@@ -166,6 +180,14 @@ body .pt-5:after {
   height: 100px;
   background: -webkit-linear-gradient(bottom, #F5F5F5, rgba(255, 255, 255, 0));
   background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
+}
+
+#form {
+  margin-top: 100px;
+  margin-left: 700px;
+  margin-right: 700px;
+  padding: 50px;
+  border: solid 1px brown;
 }
 
 .row {

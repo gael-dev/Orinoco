@@ -141,3 +141,18 @@ p {
     border: solid 4px;
     margin-bottom: 50px;
 }
+
+section {
+    text-align: -webkit-center;
+}
+
+.slide {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+    img {
+    border: solid 2px #924905;
+    border-radius: 25%;
+    }
+}
+
