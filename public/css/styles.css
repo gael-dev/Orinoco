@@ -145,6 +145,10 @@ section {
   border-radius: 25%;
 }
 
+li {
+  list-style-type: none;
+}
+
 .row {
   margin-left: 0;
   margin-right: 0;
