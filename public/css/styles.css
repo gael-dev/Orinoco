@@ -1,3 +1,7 @@
+#blocpage {
+  max-width: 1080px;
+}
+
 body {
   display: block;
 }
@@ -57,6 +61,7 @@ h1 {
 .py-3 {
   background-color: #212529;
   background: linear-gradient(360deg, rgba(70, 70, 70, 0.37), transparent);
+  margin-top: 30px;
 }
 
 .mt-2, .mb-0 {
@@ -129,6 +134,8 @@ p {
 .bye {
   border: solid 4px;
   margin-bottom: 50px;
+  width: 50%;
+  margin: auto;
 }
 
 section {
@@ -147,6 +154,16 @@ section {
 
 li {
   list-style-type: none;
+}
+
+footer p, footer a {
+  margin: 20px;
+}
+
+#objectList {
+  flex-flow: row;
+  width: 80%;
+  margin: auto;
 }
 
 .row {
