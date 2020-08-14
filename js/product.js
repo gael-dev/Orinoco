@@ -1,4 +1,4 @@
-var response;
+var response
 const api = "http://localhost:3000/api/teddies"
 let product
 

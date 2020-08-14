@@ -12,11 +12,11 @@ function insItems() {
         //insert card
         document.querySelector('#objectList').insertAdjacentHTML("beforeend", `
         <article class="card col-md-5 align-content-between col-8 mx-auto p-0 ml-2 mr-2 mb-2" id="card_' + index + '"data-id=" ${storedItems[index]._id}">
-                <a href="./pages/product.html?${storedItems[index]._id}" >
+                <a href="./pages/product.html?id=${storedItems[index]._id}" >
                     <img class="card-img-top border border-light" id="card-img_' + index + '" alt="image de ${storedItems[index].name}" src="${storedItems[index].imageUrl}"/>
                 </a>
                 <div class="card-body" id="card-body_${index}"> 
-                    <a href="./pages/product.html?${storedItems[index]._id}" >
+                    <a href="./pages/product.html?id=${storedItems[index]._id}" >
                         <div class="card-title text-center" id="card-title_${index}">
                         ${storedItems[index].name}
                         </div>
@@ -25,7 +25,7 @@ function insItems() {
                     ${storedItems[index].price / 100}\u20ac
                     </div>
                     <div class="row">
-                    <a href='./pages/product.html?${storedItems[index]._id}' class="btn add_cart mx-auto btn-success" id="${storedItems[index]._id}">
+                    <a href='./pages/product.html?id=${storedItems[index]._id}' class="btn add_cart mx-auto btn-success" id="${storedItems[index]._id}">
                         Personnalisez votre nounours !
                     </a>
                 </div>

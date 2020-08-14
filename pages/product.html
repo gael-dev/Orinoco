@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/css/styles.css">
-    <script src="../js/product.js"></script>
 </head>
 
 <body>
@@ -24,23 +23,35 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="../public/img/logo.png"></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#Détails">Ours en peluche</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="mailto:gael.mijatovic@gmail.com">Contact</a>
-                      </li>
-                </ul>
-                <a class="btn navbar-btn mx-2 shadowed btn-primary" href="./cart.html">Panier</a>
-            </div>
+          <a class="navbar-brand" href="./index.html"><img src="../public/img/logo.png"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="toggle navigation"><span
+              class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse text-center justify-content-end" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#teddies">Ours en peluche</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#soon">Prochainement</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="mailto:gael.mijatovic@gmail.com">Contact</a>
+              </li>
+            </ul>
+            <a class="btn navbar-btn mx-2 shadowed btn-primary" href="../pages/cart.html">Panier</a>
+            <li class="nav-item cart-info">
+                <a class="nav-link" href="../pages/cart.html">
+                  <div class="wrapper-count">
+                    <img src="../public/img/panier.png" id="in_cart" alt="cart-icon" class="brand">
+                    <span id="in_cart_count">0</span>
+                    <div id="in_cart_popover">votre panier est vide !</div>
+                  </div>
+                </a>
+            </li>
+          </div>
         </div>
-    </nav>
+      </nav>
    </header> 
     <!-- Cover -->
     <div class="section-fade-out pt-5">

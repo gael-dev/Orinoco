@@ -36,10 +36,15 @@
         </ul>
         <a class="btn navbar-btn mx-2 shadowed btn-primary" href="./pages/cart.html">Panier</a>
         <li class="nav-item cart-info">
-          <div>
-            <a href="./pages/cart.html"><img src="./public/img/panier.png" alt="cart-icon"></a>
-            <div id="cartQuantity"></div>
-          </div>
+            <a class="nav-link" href="./pages/cart.html">
+              <div class="wrapper-count">
+                <div>
+                <img src="./public/img/panier.png" id="in_cart" alt="cart-icon" class="brand">
+                </div>
+                <span id="in_cart_count">0</span>
+                <div id="in_cart_popover">votre panier est vide !</div>
+              </div>
+            </a>
         </li>
       </div>
     </div>
