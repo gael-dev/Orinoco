@@ -1,0 +1,147 @@
+@font-face{
+    font-family: 'lilitaOne';
+    src : url('./assets/font/LilitaOne.ttf')
+}
+@font-face{
+    font-family:'disney';
+    src: url('./assets/font/waltograph42.otf'),
+        url('./assets/font/waltographUI.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'actionMan';
+    src: url('./assets/font/Action_Man_Shaded-webfont.eot');
+    src: url('./assets/font/Action_Man_Shaded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/font/Action_Man_Shaded-webfont.woff') format('woff'),
+         url('./assets/font/Action_Man_Shaded-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    font-family: 'lilitaOne';
+}
+
+body{
+    background-color:$blue-light;
+    display:flex; flex-direction: column;
+}
+
+.bg-dark {
+    background-color: $black-light!important;
+}
+
+h1{
+    font-family: 'lilitaOne', 'disney','actionMan', 'american typewriter';
+}
+h2{
+    font-family:'actionMan', 'american typewriter';
+}
+p{
+    font-size: 16px;
+}
+
+
+
+a{
+    font-family:'sans-serif'
+}
+
+.card-body a {
+    color: black;
+}
+footer a{
+    color: white;
+}
+
+.btn-success{
+    color: rgb(30,30,30)
+}
+#in_cart_count{
+    color: #1F2327;
+}
+.trait {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    margin-top: 40px;
+}
+
+.trait1 {
+    width: 300px;
+    height: 300px;
+    transform:scaleX(-1);
+}
+.row {
+   align-items: center;
+    justify-content: space-around;
+}
+
+#objectList {
+    flex-flow: row;
+    margin: 20px;
+}
+body {
+    .pt-5 {
+        background-image:
+        linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(206, 206, 206, 0.73)),
+        url('https://serving.photos.photobox.com/198556306478658a6a9b151438cc640f9648709b54027ef32df05519302a71d5f5485cfb.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        color: white;
+        margin-top: 0px;
+    }
+    }
+    body {
+    .pt-5:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: -webkit-linear-gradient( bottom , #F5F5F5, rgba(255,255,255,0));
+        background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
+        
+    }
+    }
+    #ban {
+                display: none;
+    }  
+
+    .bye {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .bye {
+        img {
+            border: solid 4px;
+            width: 50%;
+        }
+    }
+    .container-teddies {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+        margin-left: 30px; 
+        margin-right: 30px;
+    
+        p {
+            text-align: justify;
+            border: solid 1px; 
+            border-radius: 0.25rem;
+            padding: 5px;
+        }
+        
+    }
+    .container-teddies {
+    .row {
+        margin-right: 0px;    
+        margin-left: 0px;
+    }
+    }

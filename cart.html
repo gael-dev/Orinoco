@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel='icon' href='favicon.ico' />
+
+    <title>OriBear - panier</title>
+</head>
+
+<body>
+    <header>
+        <!--navbar-->
+        <nav class="col navbar navbar-expand-md navbar-reverse bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="img/oribear.png" alt="titre orinoco" class="brand" /></a>
+            <button aria-label="boutton de menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="./img/logo.png" alt='logo oribear' class='navbar-brand justify-self-center logo-img'/>
+    
+            <div id="navbarContent" class="bg-dark collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">
+                        <div class="wrapper-count"><!-- wrapper for span position-->
+                            <img src="img/cart.png" id="in_cart" alt="panier" class="brand" />
+                            <span id="in_cart_count"></span>
+                            <div id="in_cart_popover">
+                                <p>Dans le panier :</p>
+                                <div class="row" id="in_cart_content"> <!-- popover to show in cart items-->
+                                </div>  
+                            </div>
+                        </div>
+                        </a>
+               
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img src="img/user.svg" alt="mon compte" class="brand" id="cart"/></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Votre panier</h1>
+        </div>
+        <div class="container in-cart" id="in-cart">
+            <form id="form-contact">
+                <div class="row">
+
+                    <div class="container col-md-10 col-sm-12">
+                        <div class='row'>
+                            <div id="in-cart-list">
+
+                            </div>
+                        </div>
+                        <section class="row border-top border-light" id="contact-form">
+                            
+
+                        </section>
+
+                        <section class="container" id="payment">
+
+                        </section>
+                    </div>
+                    <section class=" container col-md-2 col-12 mb-2" id="in-cart-resume">
+                        <div class='container-fluid position-md-fixed width-max-content'>
+                            <div class="row">
+                                <h4 class="mx-auto">Total</h4>
+                            </div>
+                            <div class="row">
+                                <h5 id="in-cart-total" class="mx-auto">
+    
+                                </h5>
+                            </div>
+                            <div class="row">
+                                <button type="submit" class="btn-success btn" id="POSTdata">Passer commande</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+
+
+
+
+    </main>
+    <footer class="mt-auto">
+        <div class="container-fluid mx-auto bg-dark">
+            <div class="row justify-content-between">
+                 <div class="mt-1">
+                     <p class="underlined footer_main">Besoin d'aide?</p>
+                     <a href='#'>Infos COVID</a><br>
+                     <a href='#'>Mode de livraison</a><br>
+                     <a href='#'>Mode de paiement</a>
+                 </div>
+                 <div class="mt-1" >
+                     <p class="underlined footer_main">SAV</p>
+                     <a href='#'>Retour et remboursement</a><br>
+                     <a href='#'>Suivi de commande</a><br>
+                     <a href='#'>Nous contacter</a>
+                 </div>
+                 <div class="mt-1">
+                     <p class="underlined footer_main">Informations légales</p>
+                     <a href='#'>CGU</a><br>
+                     <a href='#'>CGV</a><br>
+                     <a href='#'>Mentions légales</a>
+                 </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <script src='common.js'></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

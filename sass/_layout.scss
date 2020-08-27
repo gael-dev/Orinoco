@@ -1,0 +1,48 @@
+.brand{
+    height:2em;
+}
+
+.card{
+    &-img{
+        &-top{
+            max-height:200px;
+        }
+    }
+}
+
+.logo-img{
+    width:3em;
+    position: absolute;
+    left: 0px;
+    right:0px;
+    margin:auto;
+    top:0px;
+}
+
+.slide {
+    width: 60%;
+    margin: auto;
+    margin-top: 90px;
+    img {
+    border: solid 2px #924905;
+    border-radius: 25%;
+    }
+}
+#product-description{
+    background: rgb(255, 236, 179);
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid gray;
+}
+
+
+@media (min-width: 991.98px){
+    .position-md-fixed{
+        position:fixed;
+    }
+    .mt-md-auto{
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+        <link rel='icon' href='favicon.ico' />
+
+        <title>OriBear - confirmation de commande</title>
+    </head>
+<body>
+    <header>
+        <!--navbar-->
+        <nav class="col navbar navbar-expand-md navbar-reverse bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="img/oribear.png" alt="titre orinoco" class="brand" /></a>
+            <button aria-label="boutton de menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="./img/logo.png" alt='logo oribear' class='navbar-brand justify-self-center logo-img'/>
+    
+            <div id="navbarContent" class="bg-dark collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">
+                        <div class="wrapper-count"><!-- wrapper for span position-->
+                            <img src="img/cart.png" id="in_cart" alt="panier" class="brand" />
+                        </div>
+                        </a>
+               
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img src="img/user.svg" alt="mon compte" class="brand" id="cart"/></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="m-2 mt-md-auto mb-md-auto">
+        <h1 class="mx-auto text-center">Nous vous remercions de votre commande !</h1>
+        <div class='container' id='order'>
+            <div class="row">
+                <h2></h2>
+            </div>
+            <section class="container">
+                <div class='row'>
+                    <h3>Récapitulatif de votre commande :</h3>
+                </div>
+                <div class='row'>
+                    <div class=' col-md-6 col-12' id='ins-recap'>
+                        <div class='row justify-content-between mt-2'>
+                            <div class='col-3 text-center'>
+                                désignation
+                            </div>
+                            <div class='col-3 text-center'>
+                                couleur
+                            </div>
+                            <div class='col-3 text-center'>
+                                quantité
+                            </div>
+                            <div class='col-3 text-center'>
+                                prix
+                            </div>
+                        </div>
+                    </div>
+                    <div class='offset-md-1 col-md-5 col-12 mt-2' id='infos-dest'>
+                        <p>information sur le destinataire :</p>
+
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <p class='text-center'>Garde bien précieusement ce numéro de commande, il te servira si tu as des questions. Bonne réception !</p>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-auto">
+        <div class="container-fluid mx-auto bg-dark">
+            <div class="row justify-content-between">
+                 <div class="mt-1">
+                     <p class="underlined footer_main">Besoin d'aide?</p>
+                     <a href='#'>Infos COVID</a><br>
+                     <a href='#'>Mode de livraison</a><br>
+                     <a href='#'>Mode de paiement</a>
+                 </div>
+                 <div class="mt-1" >
+                     <p class="underlined footer_main">SAV</p>
+                     <a href='#'>Retour et remboursement</a><br>
+                     <a href='#'>Suivi de commande</a><br>
+                     <a href='#'>Nous contacter</a>
+                 </div>
+                 <div class="mt-1">
+                     <p class="underlined footer_main">Informations légales</p>
+                     <a href='#'>CGU</a><br>
+                     <a href='#'>CGV</a><br>
+                     <a href='#'>Mentions légales</a>
+                 </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src='order.js' charset="utf-8"></script>
+</body>
+</html>

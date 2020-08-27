@@ -1,0 +1,122 @@
+//listed object in the first menu
+.listed-object{
+    div{
+        div{
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+
+//nav-bar
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+//items in cart
+.wrapper-count {
+    width: max-content;
+    height: max-content;
+    position:relative;
+}
+#in_cart{
+    &_count {
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        right: 0px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        background-color: #c87a5e;
+    }
+    &_popover{
+        display:none;
+        width:1000% !important;
+        opacity:0;
+        transition: all 1s;
+        position:absolute;
+        top:45px;
+        right:0px;
+        background-color: white;
+        border-radius:5px;
+        padding:5px;
+        z-index:5;
+        width:max-content;
+        opacity:0;
+        color:black;
+
+        &:before{
+            display : inline-block;
+            content:" ";
+            height : 0;
+            width : 0;
+            border-right : 5px solid transparent;
+            border-bottom : 10px solid white;
+            border-left : 5px solid transparent;
+            position:absolute;
+            top:-5px;
+            left:95%;
+        }
+        p{
+            white-space: nowrap;
+            color:black;
+        }
+    }
+    
+}
+
+.in_cart{
+    &_popover{
+        &_img{
+            width:100%;
+        }
+    }
+}
+//remove btn focus
+.btn-outline-info.focus, .btn-outline-info:focus {
+    outline: none;
+    box-shadow: none;
+  }
+//footer
+body{
+    min-height:100vh;
+    position: relative;
+}
+footer{
+
+    width:100%;
+    color:white;
+    font-size: 12px;
+}
+
+.width-max-content{
+    width:max-content
+}
+
+.delete-button:hover{
+    cursor:pointer;
+}
+
+@media (min-width:991px){
+    .wrapper-count:hover > #in_cart_popover {
+        display : block;
+        opacity: 1;
+    }
+    .in_cart_count:hover > #in_cart_popover {
+        display : block;
+        opacity: 1;
+    }
+    #in_cart_popover:hover {
+        display : block;
+        opacity: 1;
+    }
+}
