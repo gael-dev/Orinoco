@@ -139,6 +139,14 @@ body .pt-5:after {
   margin-left: 0px;
 }
 
+#form-contact .row {
+  margin: 10px;
+}
+
+#in-cart {
+  margin-top: 20px;
+}
+
 .listed-object div div img {
   width: 100%;
 }
