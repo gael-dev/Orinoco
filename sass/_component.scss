@@ -106,7 +106,7 @@ footer{
     cursor:pointer;
 }
 
-@media (min-width:991px){
+@media (max-width:1025px){
     .wrapper-count:hover > #in_cart_popover {
         display : block;
         opacity: 1;
@@ -118,5 +118,29 @@ footer{
     #in_cart_popover:hover {
         display : block;
         opacity: 1;
+    }
+    .py-5 {
+        display: none;
+    }
+    #objectList {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:769px){
+    .trait, .trait1{
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+    .py-5 {
+        display: none;
+    }
+    .pt-5 {
+        display: none;
+    }
+    #objectList {
+        flex-flow: column;
     }
 }
